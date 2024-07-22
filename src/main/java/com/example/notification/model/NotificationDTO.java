@@ -9,13 +9,10 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-public class Notification {
-    private String id;
+public class NotificationDTO {
     private String content;
-    private Long createdAt;
-    private Status status;
     private NotificationType notificationType;
-    private String userId;
+    private List<String> userId;
     private String title;
     private Type type;
     private Coin product;
